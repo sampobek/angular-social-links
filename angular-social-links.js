@@ -70,7 +70,12 @@
           status: '@status'
         }, sharedScopeDefinition),
         link: linker(function(scope, url) {
-          scope.status || (scope.status = "Check this out! - " + url);
+          if (!scope.status) {
+            scope.status = "Check this out! - " + url;
+          }
+          else {
+            scope.status = scope.status + " - " + url;
+          }
           return "https://twitter.com/intent/tweet?text=" + (encodeURIComponent(scope.status));
         })
       };
