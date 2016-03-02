@@ -99,7 +99,7 @@
           description: '@description'
         }, sharedScopeDefinition),
         link: linker(function(scope, url) {
-          return "http://pinterest.com/pin/create/button/?url=" + (encodeURIComponent(url)) + "&amp;media=" + (encodeURIComponent(scope.media)) + "&amp;description=" + (encodeURIComponent(scope.description));
+          return "http://pinterest.com/pin/create/button/?url=" + (encodeURIComponent(url)) + "&media=" + (encodeURIComponent(scope.media)) + "&description=" + (encodeURIComponent(scope.description));
         })
       };
     }
