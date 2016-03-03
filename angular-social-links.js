@@ -74,7 +74,7 @@
             scope.status = "Check this out! - " + url;
           }
           else {
-            scope.status = scope.status + " - " + url;
+            scope.status = scope.status;
           }
           return "https://twitter.com/intent/tweet?text=" + (encodeURIComponent(scope.status));
         })
